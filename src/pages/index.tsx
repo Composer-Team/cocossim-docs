@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
@@ -10,11 +11,12 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const logoUrl = useBaseUrl('/img/cocossimlogo.png');
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem'}}>
-          <img src="/cocossim-docs/img/cocossimlogo.png" alt="COCOSSim Logo" style={{width: '80px', height: '80px', marginRight: '1rem'}} />
+          <img src={logoUrl} alt="COCOSSim Logo" style={{width: '80px', height: '80px', marginRight: '1rem'}} />
           <Heading as="h1" className="hero__title" style={{margin: 0}}>
             {siteConfig.title}
           </Heading>

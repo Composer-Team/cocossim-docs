@@ -19,7 +19,7 @@ This guide will help you install and set up COCOSSim on your system.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/cocossim.git
+git clone https://github.com/mc186/cocossim.git
 cd cocossim
 ```
 
