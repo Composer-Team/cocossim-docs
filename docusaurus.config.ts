@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'COCOSSim',
   tagline: 'A Cycle-Accurate Simulator for Heterogeneous Systolic Array Architectures',
-  favicon: 'img/coco.png',
+  favicon: 'img/cocossimlogo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {

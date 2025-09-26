@@ -26,7 +26,11 @@ cd cocossim
 ### 2. Initialize Submodules
 COCOSSim uses DRAMSim3 as a submodule for memory simulation:
 ```bash
-git submodule update --init --recursive
+# Use the setup script
+./setup_dramsim.sh
+
+# Alternative command to initialize DRAMSim3 submodule
+git clone --recursive https://github.com/umd-memsys/DRAMsim3.git dramsim3
 ```
 
 ### 3. Build the Project
