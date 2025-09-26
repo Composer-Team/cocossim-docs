@@ -1,0 +1,96 @@
+# Jekyll Configuration for COCOSSim Documentation
+
+# Site settings
+title: COCOSSim Documentation
+description: Cycle-accurate neural network accelerator simulator
+baseurl: "/cocossim" # Change this to your repository name
+url: "https://your-username.github.io" # Change this to your GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation structure
+header_pages:
+  - guides/installation.md
+  - guides/basic-usage.md
+  - guides/architecture.md
+  - api/core-classes.md
+  - examples/basic.md
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  api:
+    output: true
+    permalink: /:collection/:name/
+  examples:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "page"
+      sidebar: "guides"
+  - scope:
+      path: ""
+      type: "api"
+    values:
+      layout: "page"
+      sidebar: "api"
+  - scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "page"
+      sidebar: "examples"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include
+include:
+  - _pages
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+# SEO settings
+author: COCOSSim Team
+twitter:
+  username: # Add your Twitter handle if applicable
+  card: summary_large_image
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
+
+# Social links
+github_username: # Add your GitHub username
