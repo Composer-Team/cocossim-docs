@@ -14,7 +14,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1rem'}}>
-          <img src="/cocossim/img/coco.png" alt="COCOSSim Logo" style={{width: '80px', height: '80px', marginRight: '1rem'}} />
+          <img src="/cocossim-docs/img/cocossimlogo.png" alt="COCOSSim Logo" style={{width: '80px', height: '80px', marginRight: '1rem'}} />
           <Heading as="h1" className="hero__title" style={{margin: 0}}>
             {siteConfig.title}
           </Heading>
