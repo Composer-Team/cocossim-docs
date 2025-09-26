@@ -57,12 +57,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/coco.png',
+    image: 'img/cocossimlogo.png',
     navbar: {
       title: 'COCOSSim',
       logo: {
         alt: 'COCOSSim Logo',
-        src: 'img/coco.png',
+        src: 'img/cocossimlogo.png',
       },
       items: [
         {
